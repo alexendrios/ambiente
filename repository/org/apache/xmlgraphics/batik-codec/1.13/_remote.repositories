@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Jan 22 15:34:17 BRT 2022
+batik-codec-1.13.jar>central=
+batik-codec-1.13-sources.jar>central=
+batik-codec-1.13.pom>central=
