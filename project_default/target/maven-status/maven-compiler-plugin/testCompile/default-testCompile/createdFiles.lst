@@ -1,0 +1,8 @@
+br\com\project_default\runners\TestRunner.class
+br\com\project_default\steps\ComprarStep.class
+br\com\project_default\steps\Hooks.class
+br\com\project_default\steps\LoginStep.class
+br\com\project_default\steps\FiltroStep.class
+br\com\project_default\pages\ProdutosPage.class
+br\com\project_default\pages\LoginPage.class
+br\com\project_default\utils\Utils.class

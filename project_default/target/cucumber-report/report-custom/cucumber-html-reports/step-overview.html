@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>br.com.project_default.test.automacao_web</td>
+                          <td>1</td>
+                        <td>23 jan 2022, 00:02</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">ComprarStep.ao_checar_no_carrino()</td>
+                <td>8</td>
+                <td class="duration" data-value="406906100">406ms</td>
+                <td class="duration" data-value="50863262">050ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ComprarStep.ao_decidir_se_irá_finalizar_a_operação(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="94894100">094ms</td>
+                <td class="duration" data-value="47447050">047ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ComprarStep.ao_escolher_a_quantidade_de_produtos(Integer)</td>
+                <td>8</td>
+                <td class="duration" data-value="1637549200">1s 637ms</td>
+                <td class="duration" data-value="204693650">204ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ComprarStep.ao_prencher_o_primeiro_nome_o_sobrenome_e_o_CEP(String,String,String)</td>
+                <td>2</td>
+                <td class="duration" data-value="572515900">572ms</td>
+                <td class="duration" data-value="286257950">286ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ComprarStep.deve_se_visualizada_a_quantidade_de_produtos_na_tela(Integer)</td>
+                <td>6</td>
+                <td class="duration" data-value="265134947000">4m 25s 134ms</td>
+                <td class="duration" data-value="44189157833">44s 189ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ComprarStep.remover_a_quantidade_de_produtos(Integer)</td>
+                <td>6</td>
+                <td class="duration" data-value="771136700">771ms</td>
+                <td class="duration" data-value="128522783">128ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ComprarStep.visualizo_a_seguinte_nebsagen(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="4064957000">4s 064ms</td>
+                <td class="duration" data-value="2032478500">2s 032ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FiltroStep.ao_logar_na_aplicação_com_as_credenciais_usuário_e_senha(String,String)</td>
+                <td>12</td>
+                <td class="duration" data-value="2440848200">2s 440ms</td>
+                <td class="duration" data-value="203404016">203ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FiltroStep.ao_selecionar_os_produtos_pelo_tipo(String)</td>
+                <td>12</td>
+                <td class="duration" data-value="2340653200">2s 340ms</td>
+                <td class="duration" data-value="195054433">195ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FiltroStep.visualiza_se_os_produtos_ordenados(String)</td>
+                <td>4</td>
+                <td class="duration" data-value="1220400">001ms</td>
+                <td class="duration" data-value="305100">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Hooks.setup()</td>
+                <td>18</td>
+                <td class="duration" data-value="41961742900">41s 961ms</td>
+                <td class="duration" data-value="2331207938">2s 331ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Hooks.tearDown(Scenario)</td>
+                <td>18</td>
+                <td class="duration" data-value="15586977800">15s 586ms</td>
+                <td class="duration" data-value="865943211">865ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginStep.ao_informar_ao_Sistema_as_Credenciais_usuário_e_senha(String,String)</td>
+                <td>6</td>
+                <td class="duration" data-value="1014683800">1s 014ms</td>
+                <td class="duration" data-value="169113966">169ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginStep.é_verificado_que_está_logado_no_Sistema_visulaizando_a_mensagem(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="60656600">060ms</td>
+                <td class="duration" data-value="10109433">010ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>14</td>
+              <td>110</td>
+              <td class="duration">5m 36s 089ms</td>
+              <td class="duration">3s 055ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
